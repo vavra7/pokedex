@@ -1,0 +1,11 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "repository": "git@github.com:vavra7/pokedex.git",
+  "author": "Tomas Vavrinka <tomas.vavrinka@seznam.cz>",
+  "workspaces": [
+    "apps/*"
+  ]
+}

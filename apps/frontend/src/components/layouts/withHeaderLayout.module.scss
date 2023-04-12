@@ -1,0 +1,12 @@
+@use '../../assets/styles/abstract/colors';
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: colors.$background;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.main {
+  background-color: colors.$background;
+}

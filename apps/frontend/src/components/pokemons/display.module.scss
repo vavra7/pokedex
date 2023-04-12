@@ -1,0 +1,19 @@
+@use '../../assets/styles/abstract/colors';
+
+.button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0.125rem;
+  color: colors.$primary;
+
+  &:hover {
+    background-color: colors.$surface;
+  }
+}
+
+.divider {
+  margin: 0 0.5rem;
+  width: 1px;
+  background-color: colors.$border;
+}

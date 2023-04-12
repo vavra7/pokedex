@@ -1,0 +1,9 @@
+.self {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(12, 1fr);
+
+  & + :global(.row) {
+    margin-top: 0.5rem;
+  }
+}

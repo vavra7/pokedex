@@ -1,0 +1,14 @@
+@use "sass:color";
+
+$background: white;
+$primary: #67b998;
+$primary-hover: color.scale($primary, $lightness: -25%);
+$primary-lighter: color.scale($primary, $lightness: 50%);
+$secondary: #9f9fff;
+$secondary-lighter: color.scale($secondary, $lightness: 50%);
+$surface: #f2f1f2;
+$border: #c6c4c6;
+$heart: #ff0000;
+$error: #ff0000;
+$text: #000000;
+$text-hover: color.scale($text, $lightness: 25%);

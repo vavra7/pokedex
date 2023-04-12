@@ -1,0 +1,32 @@
+@use '../../assets/styles/abstract/colors';
+
+.self {
+  position: relative;
+
+  select {
+    padding: 0 0.5rem;
+    border: none;
+    background-color: colors.$surface;
+    height: 2rem;
+    width: 100%;
+    outline: none;
+
+    &:global(.empty) {
+      color: gray;
+    }
+
+    .empty-option {
+      display: none;
+    }
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+  }
+}

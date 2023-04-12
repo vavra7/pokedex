@@ -1,0 +1,10 @@
+@use '../../assets/styles/abstract/colors';
+
+.self {
+  padding: 0 0.5rem;
+  border: none;
+  background-color: colors.$surface;
+  height: 2rem;
+  width: 100%;
+  outline: none;
+}

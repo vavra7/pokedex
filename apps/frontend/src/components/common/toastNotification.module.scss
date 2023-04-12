@@ -1,0 +1,39 @@
+@use '../../assets/styles/abstract/colors';
+
+.self {
+  position: relative;
+  margin: 1rem;
+  background-color: colors.$background;
+  border: solid 1px colors.$border;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 18rem;
+  max-width: calc(100% - 2rem);
+
+  .stripe {
+    width: 0.5rem;
+
+    &:global(.success) {
+      background-color: colors.$primary;
+    }
+
+    &:global(.error) {
+      background-color: colors.$error;
+    }
+  }
+
+  .message {
+    padding: 1rem 2rem 1rem 1rem;
+  }
+
+  .close {
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: colors.$text;
+    font-size: 1.5rem;
+  }
+}

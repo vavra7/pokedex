@@ -1,0 +1,67 @@
+@use '../../assets/styles/abstract/colors';
+
+.self {
+  aspect-ratio: 10/16;
+  display: flex;
+  flex-direction: column;
+  background-color: colors.$background;
+  border: solid 1px colors.$border;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+
+  a {
+    display: flex;
+    padding: 1rem;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+      height: auto
+    }
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr auto auto;
+  background-color: colors.$surface;
+  padding: 0.5rem;
+
+  .name {
+    text-decoration: none;
+    color: colors.$text;
+    display: flex;
+    align-items: center;
+
+    :hover {
+      color: colors.$text-hover;
+    }
+  }
+
+  .types {
+    white-space: nowrap;
+  }
+
+  .modal {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    justify-self: end;
+    align-self: center;
+  }
+
+  .like {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    justify-self: end;
+    align-self: center;
+    cursor: pointer;
+    color: colors.$heart;
+    border: none;
+  }
+}

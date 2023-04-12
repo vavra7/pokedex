@@ -1,0 +1,30 @@
+{
+  "artificialDelayMilliseconds": 100,
+  "keepExistingTerminalsOpen": false,
+  "runOnStartup": false,
+  "terminals": [
+    {
+      "splitTerminals": [
+        {
+          "name": "root"
+        }
+      ]
+    },
+    {
+      "splitTerminals": [
+        {
+          "name": "backend",
+          "commands": ["cd ./apps/backend", "yarn start"]
+        }
+      ]
+    },
+    {
+      "splitTerminals": [
+        {
+          "name": "frontend",
+          "commands": ["cd ./apps/frontend", "yarn dev"]
+        }
+      ]
+    }
+  ]
+}
